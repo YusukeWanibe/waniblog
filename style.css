@@ -41,7 +41,6 @@ Version:0.2.0
 	#gnav li {
 		width : auto;
 	}
-
 	#header-menu-tog {
 		position : fixed;
 		right : 24px;
@@ -63,52 +62,43 @@ Version:0.2.0
 		-webkit-animation-duration : 0.5s;
 		-webkit-animation-name : fade-in;
 	}
-
 	@keyframes fade-in {
 		0% {
 			display : none;
 			opacity : 0;
 		}
-
 		1% {
 			display : block;
 			opacity : 0;
 		}
-
 		100% {
 			display : block;
 			opacity : 1;
 		}
 	}
-
 	@-moz-keyframes fade-in {
 		0% {
 			display : none;
 			opacity : 0;
 		}
-
 		1% {
 			display : block;
 			opacity : 0;
 		}
-
 		100% {
 			display : block;
 			opacity : 1;
 		}
 	}
-
 	@-webkit-keyframes fade-in {
 		0% {
 			display : none;
 			opacity : 0;
 		}
-
 		1% {
 			display : block;
 			opacity : 0;
 		}
-
 		100% {
 			display : block;
 			opacity : 1;
