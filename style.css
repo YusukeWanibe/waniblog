@@ -27,6 +27,12 @@ Version:0.2.0
 	border-top : 0!important;
 	border-bottom : 2px #2581c4 solid!important;
 }
+/* サイドバー　アイコン */
+.side-widget-inner img {
+	border-radius : 50%;
+	padding : 15px;
+}
+/* サイドバー　アイコン 終わり*/
 @media screen and (max-width: 991px) {
 	#gnav {
 		position : fixed;
