@@ -32,6 +32,10 @@ Version:0.2.0
 	border-radius : 50%;
 	padding : 15px;
 }
+.side-widget-inner img:hover {
+	opacity : 0.7;
+	transition : 0.3s ease-in-out;
+}
 /* サイドバー　アイコン 終わり*/
 @media screen and (max-width: 991px) {
 	#gnav {
