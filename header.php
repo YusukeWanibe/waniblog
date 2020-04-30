@@ -1,14 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="ja">
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-7497259755191046",
-      enable_page_level_ads: true
-    });
-  </script>
+<head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#">
   <meta charset="UTF-8">
   <title><?php bzb_title(); ?></title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -26,25 +19,9 @@
     gtag('config', 'UA-131510107-2');
   </script>
 
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <!--[endif]-->
 
-  <!-- オプティマイズABテスト -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131510107-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-131510107-2', {
-      'optimize_id': 'GTM-TFXJPJH'
-    });
-  </script>
-  <!-- オプティマイズABテスト終わり -->
   <?php wp_head(); ?>
 
   <?php echo get_option('analytics_tracking_code'); ?>
@@ -52,7 +29,7 @@
 
 </head>
 
-<body id="#top" <?php body_class(); ?> itemschope="itemscope" itemtype="http://schema.org/WebPage">
+<body id="#top" <?php body_class(); ?> itemschope="itemscope" itemtype="https://schema.org/WebPage">
 
   <?php bzb_show_facebook_block(); ?>
 
@@ -66,7 +43,7 @@
 
     <?php } else { ?>
 
-      <header id="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+      <header id="header" role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
         <div class="wrap">
           <?php
           $logo_image = get_option('logo_image');
@@ -97,7 +74,7 @@
       <!-- start global nav  -->
       <!---->
       <?php if (has_nav_menu('global_nav')) { ?>
-        <nav id="gnav" role="navigation" itemscope="itemscope" itemtype="http://scheme.org/SiteNavigationElement">
+        <nav id="gnav" role="navigation" itemscope="itemscope" itemtype="https://scheme.org/SiteNavigationElement">
           <div class="wrap">
             <?php
             wp_nav_menu(
