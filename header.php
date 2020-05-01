@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <title><?php bzb_title(); ?></title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <!--[if lt IE 9]-->
+  <!--[if lt IE 9]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131510107-2"></script>
   <script>
@@ -29,7 +31,7 @@
 
 </head>
 
-<body id="#top" <?php body_class(); ?> itemschope="itemscope" itemtype="https://schema.org/WebPage">
+<body id="top" <?php body_class(); ?> itemschope="itemscope" itemtype="https://schema.org/WebPage">
 
   <?php bzb_show_facebook_block(); ?>
 
@@ -90,7 +92,6 @@
           </div>
         </nav>
       <?php } ?>
-
 
     <?php } // if is_singular('lp') 
     ?>

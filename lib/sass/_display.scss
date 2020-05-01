@@ -1,0 +1,155 @@
+@import 'setting';
+
+/* all display
+-------------------------------------------------- */
+
+.wrap{
+  width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  *zoom:1;
+  &:before{
+    display: inline-table;
+  }
+  &:after{
+    content: "";
+    display: block;
+    clear:both;
+  }
+}
+#main{
+  width: 100%;
+  float: left;
+}
+.main-inner{
+  margin-right: $side-width + $pc-gt;
+}
+#side{
+  width: $side-width;
+  float: left;
+  margin-left: -$side-width;
+}
+
+.left-content{
+  #main{
+    width: 100%;
+    float: left;
+  }
+  .main-inner{
+    margin-right: $side-width + $pc-gt;
+    margin-left:0;
+  }
+  #side{
+    width: $side-width;
+    float: left;
+    margin-left: -$side-width;
+  }
+}
+.right-content{
+  #main{
+    width: 100%;
+    float: left;
+  }
+  .main-inner{
+    margin-left: $side-width + $pc-gt;
+    margin-right: 0;
+  }
+  #side{
+    width: $side-width;
+    float: left;
+    margin-left: -100%;
+  }
+}
+.one-column{
+  #content{
+    .wrap{
+      width: 1000px;
+      #main{
+        width: 100%;
+        float: none;
+        .main-inner{
+          width: 100%;
+          margin: 0;
+        }
+      }
+      #side{
+        display: none;
+      }
+    }
+  }
+}
+
+
+/* ----------------------------------------
+* レスポンシブ
+* ~ / 1200px / 991px / 767px 
+* desctop / laptop / tablet / phone
+---------------------------------------- */
+
+@media screen and (max-width: 1200px) {
+/* laptop */
+.wrap,
+.one-column #content .wrap{
+  margin-left: $lp-gt;
+  margin-right: $lp-gt;
+  width: auto;
+}
+.main-inner{
+  margin-right: $side-width + $lp-gt;
+  box-sizing: border-box;
+}
+
+/* laptop end */
+}
+
+@media screen and (max-width: 991px) {
+/* tablet */
+
+.wrap,
+.one-column #content .wrap{
+  margin-left: $tb-gt;
+  margin-right: $tb-gt;
+}
+
+#main,
+.main-inner,
+#side{
+  float: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.left-content,
+.right-content{
+  #main{
+    float: none;
+  }
+  .main-inner{
+    margin-right: 0;
+    margin-left:0;
+    width: 100%;
+  }
+  #side{
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+}
+#side{
+  padding-top: 42px;
+}
+
+/* tablet end */
+}
+@media screen and (max-width: 767px) {
+/* phone */
+
+.wrap,
+.one-column #content .wrap{
+  margin-left: $sp-gt;
+  margin-right: $sp-gt;
+}
+
+/* phone end */
+}

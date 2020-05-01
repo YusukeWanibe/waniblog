@@ -42,8 +42,7 @@
         });
       <?php } ?>
       // スマホトグルメニュー
-      $('#gnav').removeClass('arcive');
-
+      $('#gnav').removeClass('active');
       $('#header-menu-tog a').click(function() {
         $('#gnav').toggleClass('active');
       });
@@ -53,6 +52,5 @@
   })(jQuery);
 </script>
 </body>
-
 
 </html>
