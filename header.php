@@ -91,5 +91,6 @@
         </nav>
       <?php } ?>
 
+
     <?php } // if is_singular('lp') 
     ?>
