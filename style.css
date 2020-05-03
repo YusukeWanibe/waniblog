@@ -62,7 +62,7 @@ Version:0.2.0
 		font-size : 30px;
 	}
 	/* SPメニューフェードイン */
-	#gnav.actibe {
+	#gnav.active {
 		display : block;
 		opacity : 1;
 		        animation-duration : 0.5s;
