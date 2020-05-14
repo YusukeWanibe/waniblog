@@ -37,6 +37,13 @@ Version:0.2.0
 	transition : 0.3s ease-in-out;
 }
 /* サイドバー　アイコン 終わり*/
+/* ブログ写真キャプション */
+.wp-block-image figcaption {
+    text-align: center;
+    margin-top: 0;
+    color: #9E9E9E;
+}
+/* ブログ写真キャプション 終わり*/
 @media screen and (max-width: 991px) {
 	#gnav {
 		position : fixed;
@@ -115,4 +122,9 @@ Version:0.2.0
 		}
 	}
 	/* SPメニューフェードイン 終わり*/
+	/* ブログ写真キャプション */
+	.wp-block-image figcaption {
+		display: none;
+	}
+	/* ブログ写真キャプション 終わり*/
 }
