@@ -4,121 +4,126 @@ Template:xeory_base
 Version:0.2.0
 */
 #header {
-	background : url(https://www.waniblog.jp/wp-content/uploads/2019/07/adventure-arid-barren-946366.jpg)!important;
-	background-repeat : no-repeat;
-	height : 300px;
-	background-size : cover!important;
-	background-position : bottom 35% center!important;
+	background: url(https://www.waniblog.jp/wp-content/uploads/2019/07/adventure-arid-barren-946366.jpg)!important;
+	background-position: bottom 35% center!important;
+	background-repeat: no-repeat;
+	background-size: cover!important;
+	height: 300px;
 }
 #header #logo a {
-	color : #ffffff;
+	color: #fff;
 }
 #gnav li {
-	width : 110px;
-	font-size : 18px;
+	font-size: 18px;
+	width: 110px;
 }
 #gnav li a {
-	border-top : 0!important;
-	border-bottom : 2px #efefef solid!important;
-	margin : 0 0 20px!important;
-	padding : 20px 0 0!important;
+	border-bottom: 2px #efefef solid!important;
+	border-top: 0!important;
+	margin: 0 0 20px!important;
+	padding: 20px 0 0!important;
 }
 #gnav li a:hover {
-	border-top : 0!important;
-	border-bottom : 2px #2581c4 solid!important;
+	border-bottom: 2px #2581c4 solid!important;
+	border-top: 0!important;
 }
 /* サイドバー　アイコン */
 .side-widget-inner img {
-	border-radius : 50%;
-	padding : 15px;
+	border-radius: 50%;
+	padding: 15px;
 }
 .side-widget-inner img:hover {
-	opacity : 0.7;
-	transition : 0.3s ease-in-out;
+	opacity: .7;
+	transition: .3s ease-in-out;
 }
 /* サイドバー　アイコン 終わり*/
 /* ブログ写真キャプション */
 .wp-block-image figcaption {
-    text-align: center;
-    margin-top: 0;
-    color: #9E9E9E;
+	color: #9e9e9e;
+	margin-top: 0;
+	text-align: center;
 }
 /* ブログ写真キャプション 終わり*/
 @media screen and (max-width: 991px) {
 	#gnav {
-		position : fixed;
-		width : 96%;
-		top : 0;
-		height : 94vh;
-		margin : 3vh 2%!important;
-		background : rgba(255, 255, 255, 0.9)!important;
-		padding : 60px 10px 0!important;
-		opacity : 0;
+		background: rgba(255, 255, 255, .9)!important;
+		height: 94vh;
+		margin: 3vh 2%!important;
+		opacity: 0;
+		padding: 60px 10px 0!important;
+		position: fixed;
+		top: 0;
+		width: 96%;
 	}
 	#gnav li {
-		width : auto;
+		width: auto;
 	}
 	#header-menu-tog {
-		position : fixed;
-		right : 24px;
-		top : 24px;
-		z-index : 1;
+		position: fixed;
+		right: 24px;
+		top: 24px;
+		z-index: 1;
 	}
 	#header-menu-tog a {
-		color : rgba(128, 128, 128, 0.7);
-		font-size : 30px;
+		color: rgba(128, 128, 128, .7);
+		font-size: 30px;
+	}
+	/* youtube埋め込み */
+	.wp-block-embed__wrapper iframe {
+		height: 100vw;
+		width: 100%;
 	}
 	/* SPメニューフェードイン */
 	#gnav.active {
-		display : block;
-		opacity : 1;
-		        animation-duration : 0.5s;
-		        animation-name : fade-in;
-		   -moz-animation-duration : 0.5s;
-		   -moz-animation-name : fade-in;
-		-webkit-animation-duration : 0.5s;
-		-webkit-animation-name : fade-in;
+		-webkit-animation-duration: .5s;
+		-moz-animation-duration: .5s;
+		animation-duration: .5s;
+		-webkit-animation-name: fade-in;
+		-moz-animation-name: fade-in;
+		animation-name: fade-in;
+		display: block;
+		opacity: 1;
 	}
 	@keyframes fade-in {
 		0% {
-			display : none;
-			opacity : 0;
+			display: none;
+			opacity: 0;
 		}
 		1% {
-			display : block;
-			opacity : 0;
+			display: block;
+			opacity: 0;
 		}
 		100% {
-			display : block;
-			opacity : 1;
+			display: block;
+			opacity: 1;
 		}
 	}
 	@-moz-keyframes fade-in {
 		0% {
-			display : none;
-			opacity : 0;
+			display: none;
+			opacity: 0;
 		}
 		1% {
-			display : block;
-			opacity : 0;
+			display: block;
+			opacity: 0;
 		}
 		100% {
-			display : block;
-			opacity : 1;
+			display: block;
+			opacity: 1;
 		}
 	}
 	@-webkit-keyframes fade-in {
 		0% {
-			display : none;
-			opacity : 0;
+			display: none;
+			opacity: 0;
 		}
 		1% {
-			display : block;
-			opacity : 0;
+			display: block;
+			opacity: 0;
 		}
 		100% {
-			display : block;
-			opacity : 1;
+			display: block;
+			opacity: 1;
 		}
 	}
 	/* SPメニューフェードイン 終わり*/
